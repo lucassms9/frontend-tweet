@@ -1,7 +1,7 @@
 <template>
     <div class="ui stackable two column centered vertically padded grid container">
         <div class="column">
-            <a class="ui button mini primary" @click="back">Back</a>
+            <a class="ui button mini primary" @click="back">Voltar</a>
             <div class="ui feed">
                 <div class="event">
                     <div class="label">
@@ -30,10 +30,10 @@
             <div class="ui divider"></div>
             <form class="ui form" @submit.prevent="replyTweet">
               <div class="field">
-                  <textarea name="reply" v-model="reply" rows="2" placeholder="Reply tweet"></textarea>
+                  <textarea name="reply" v-model="reply" rows="2" placeholder="Responda o tweet"></textarea>
               </div>
 
-              <button class="ui button primary" :disabled="!isFormValid">Reply</button>
+              <button class="ui button primary" :disabled="!isFormValid">Responder</button>
             </form>
 
             <Replies :replies="replies"/>

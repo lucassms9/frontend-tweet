@@ -3,7 +3,7 @@
         <div class="ui attached segment">
             <form class="ui form" @submit.prevent="postTweet">
                 <div class="field">
-                    <textarea name="tweet" v-model="tweet" rows="2" placeholder="Crie tweet"></textarea>
+                    <textarea name="tweet" v-model="tweet" rows="2" placeholder="Postar Tweet"></textarea>
                 </div>
 
                 <button class="ui button fluid primary" :disabled="!isFormValid">Tweet</button>

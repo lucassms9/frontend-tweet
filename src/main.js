@@ -10,7 +10,7 @@ import 'moment/locale/pt-br'
 
 Vue.config.productionTip = false
 window.axios = axios
-axios.defaults.baseURL = 'http://127.0.0.1:3333'
+axios.defaults.baseURL = 'http://67.205.153.159:5000/'
 
 Vue.use(Vuelidate)
 Vue.filter('timeAgo', date => moment(date).locale('pt-BR').fromNow())
